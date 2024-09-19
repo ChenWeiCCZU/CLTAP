@@ -50,8 +50,7 @@ def coll_paddding(batch_traindata):
     # Remove extra dimensions from labels
     train_y, train_y_shuffled = train_y.squeeze(), train_y_shuffled.squeeze()
 
-    # 计算对比标签
-    # Create labels to mark whether original and shuffled data are different
+    # Calculate comparison labels (XOR operation)
     label = torch.ne(train_y, train_y_shuffled).int()
 
     # Return the processed features, labels, and data lengths
