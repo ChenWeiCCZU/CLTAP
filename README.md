@@ -35,4 +35,4 @@ Extract Prot-T5-xxl feature: cd to the CLTAP/ Feature_Extract dictionary, and ru
 ## 4.3 Train and test
 Classification Task: cd to the CLTAP dictionary,and run "python3 CLTAP_cla.py" to predict TAP binding peptides.
 
-Regression Task: cd to the CLTAP dictionary,and run "python3 CLTAP_reg.py" to predict the binding affinity region of TAP.
+Regression Task: cd to the CLTAP dictionary,and run "python3 CLTAP_reg.py" to predict the binding affinity of the peptide to TAP.
