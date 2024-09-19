@@ -45,8 +45,7 @@ def coll_paddding(batch_traindata):
     feaV_shuffled = feaV[:, random_indices, :]
     train_y_shuffled = train_y[:, random_indices]
 
-    # 计算对比标签 (XOR 操作)
-    # Compute the label transformation (XOR operation)
+    # Calculate comparison labels (XOR operation)
     label = (train_y ^ train_y_shuffled)
 
     # Return the processed features, labels, and data length
